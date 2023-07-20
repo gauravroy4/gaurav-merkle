@@ -1,0 +1,32 @@
+@mixin table-styles {
+    // Define table styles
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    // Define table cell styles
+    table {
+      color: red;
+      padding: 8px 20px;
+      border: 10px solid #0b0000;
+    }
+  
+    // Define table row styles for striped effect
+    .table-striped tbody tr:nth-child(odd) {
+      background-color: rgb(110, 240, 164);
+    }
+  
+    // Define table styles for danger (red) tables
+    .table-danger {
+      background-color: rgb(4, 107, 107);
+      color: rgb(255, 0, 4);
+    }
+  
+    // Define responsive table styles
+    .table-responsive {
+      overflow-x: scroll;
+    }
+  }
+
+@include table-styles;
